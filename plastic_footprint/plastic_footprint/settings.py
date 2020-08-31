@@ -73,15 +73,16 @@ WSGI_APPLICATION = 'plastic_footprint.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
+# Use your postgres virtual environment credentials
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'plastic_tracker',
-        'USER': 'postgres',
-        'PASSWORD': 'plasticproject',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'HOST': 'localhost',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'plasticproject',
+        'USER': 'pggis',
+        'PASSWORD': 'pggis'
     }
 }
 
