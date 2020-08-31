@@ -1,0 +1,23 @@
+x plastic_footprint
+|
++---x plastic_tracker (app folder)
+|   |
+|   +--x migrations (includes files related to migrations)
+|   |
+|   +--x templates
+|   |  |--x plastic_tracker
+|   |  |  |-- base.html
+|   |  |  |-- landing_page.html
+|   |  |  |-- client_registration.html
+|   |  |  |-- client_page.html
+|   |  |  |-- product_registration_page.html
+|   |
+|   |-- models.py
+|   |-- forms.py
+|   |-- urls.py
+|   |-- views.py
+|
++---x plastic_footprint (project folder)
+|   |
+|   |-- settings.py
+|   |-- urls.py
