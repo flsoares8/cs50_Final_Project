@@ -10,6 +10,7 @@
 <body>
   <h1>CUSTOMER REGISTRATION</h1>
   <form action="" method="post" autocomplete="off">
+    {% csrf_token %}
     <!-- {{form.fullname}}
     {{form.monthly_balance}} -->
     {{form}}

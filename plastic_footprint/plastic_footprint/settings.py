@@ -78,11 +78,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'plastic_tracker',
-        'HOST': 'localhost',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'plasticproject',
-        'USER': 'pggis',
-        'PASSWORD': 'pggis'
+        'HOST': '127.0.0.1',
+        'USER': 'postgres',
+        'PASSWORD': 'plasticproject',
+        'PORT': '5432'
+        #'USER': 'pggis',
+        #'PASSWORD': 'pggis'
     }
 }
 
