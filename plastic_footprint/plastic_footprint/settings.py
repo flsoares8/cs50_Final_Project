@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'plastic_tracker'
+    'plastic_tracker',
 ]
 
 MIDDLEWARE = [
@@ -79,11 +79,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'plastic_tracker',
         'HOST': '127.0.0.1',
-        'USER': 'postgres',
-        'PASSWORD': 'plasticproject',
-        'PORT': '5432'
-        #'USER': 'pggis',
-        #'PASSWORD': 'pggis'
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'plasticproject',
+        # 'PORT': '5432'
+        'USER': 'pggis',
+        'PASSWORD': 'pggis'
     }
 }
 

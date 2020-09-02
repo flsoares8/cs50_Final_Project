@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "plastic_tracker/base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to the Plastic Tracker App!</title>
-</head>
+{% block content %}
+<h1>We are in the landing page!</h1>
+<p>TODO: define the purpose of the project and what we want to deliver</p>
 
-<body>
-  <h1>We are in the landing page!</h1>
+<div class="row">
+  <div class="col s3 offset-s9">
+    <a class="waves-effect waves-light btn" href="{% url 'customer_registration' %}">
+      <i class="material-icons right">sentiment_very_satisfied</i>
+      Register
+    </a>
+  </div>
+</div>
 
-  <button type="submit">
-    <a href="{% url 'customer_registration' %}">Register</a>
 
-  </button>
-</body>
-
-</html>
+{% endblock content %}

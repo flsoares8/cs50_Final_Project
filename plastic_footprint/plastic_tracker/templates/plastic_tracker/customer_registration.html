@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "plastic_tracker/base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <h1>CUSTOMER REGISTRATION</h1>
-  <form action="" method="post" autocomplete="off">
+{% block content %}
+<h4 class="blue-text blue-lighten-2">Customer Registration</h4>
+<div class="row">
+  <form class="col s12" action="" method="post" autocomplete="off">
     {% csrf_token %}
-    <!-- {{form.fullname}}
-    {{form.monthly_balance}} -->
-    {{form}}
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="fullname" type="text" class="validate">
+        <label for="fullname">Full Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="monthly_balance" type="text" class="validate">
+        <label for="monthly_balance">Monthly balance</label>
+      </div>
+    </div>
     <button type="submit">Submit</button>
   </form>
-</body>
+</div>
 
-</html>
+{% endblock content %}
