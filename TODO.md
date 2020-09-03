@@ -5,4 +5,10 @@
 
 [ ] Create the products table in the DB
 
-[ ] Client page with client info (name, id, plastic_balance)
+[x] Client page with client info (name, id, plastic_balance)
+
+[ ] Create a button in client_info.html to go back to the landing page
+
+[ ] Add Unique identifier number to the customer model
+
+[ ] Add search bar in the landing page
