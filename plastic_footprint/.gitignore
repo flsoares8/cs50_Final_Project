@@ -1,7 +1,2 @@
 # Django #
-*.log
-*.pot
-*.pyc
-__pycache__
-db.sqlite3
-media
+plastic_footprint/.env

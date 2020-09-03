@@ -11,10 +11,14 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+# Load environment variables
+env_path = Path('./plastic_footprint/') / '.env'
+load_dotenv(dotenv_path=env_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -70,7 +74,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'plastic_footprint.wsgi.application'
 
-
+USER=os.getenv('PG_USER')
+PASSWORD=os.getenv('PG_PASSWORD')
+print(os.getenv('PG_USER'))
+print(os.getenv('PG_PASSWORD'))
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 # Use your postgres virtual environment credentials
@@ -79,11 +86,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'plastic_tracker',
         'HOST': '127.0.0.1',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'plasticproject',
-        # 'PORT': '5432'
-        'USER': 'pggis',
-        'PASSWORD': 'pggis'
+        'USER': USER,
+        'PASSWORD': PASSWORD,
     }
 }
 
