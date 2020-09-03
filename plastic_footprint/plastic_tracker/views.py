@@ -9,8 +9,12 @@ def landing_page(request):
 
 
 def customer_registration(request):
-    form = CustomerForm(request.POST)
-    if form.is_valid():
-        form.save()
-    #     return redirect('tracker/')
-    return render(request, "plastic_tracker/customer_registration.html", {'form': form})
+    if request.method == "GET":
+        form = CustomerForm()
+        return render(request, "plastic_tracker/customer_registration.html", {'form': form})
+    else:
+        # if it is a POST, save the POST data
+        form = CustomerForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return redirect('/')

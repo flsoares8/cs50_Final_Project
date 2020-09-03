@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'plastic_tracker',
+    'materializecssform',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'plastic_footprint.wsgi.application'
 
-USER=os.getenv('PG_USER')
-PASSWORD=os.getenv('PG_PASSWORD')
-print(os.getenv('PG_USER'))
-print(os.getenv('PG_PASSWORD'))
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 # Use your postgres virtual environment credentials
@@ -86,8 +83,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'plastic_tracker',
         'HOST': '127.0.0.1',
-        'USER': USER,
-        'PASSWORD': PASSWORD,
+        'USER': os.getenv('PG_USER'),
+        'PASSWORD': os.getenv('PG_PASSWORD')
     }
 }
 
