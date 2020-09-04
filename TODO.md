@@ -1,9 +1,9 @@
 ## TODO list
 [x] Substitute DB credentials by env variables
 
-[ ] Create a form to register products
+[x] Create a form to register products
 
-[ ] Create the products table in the DB
+[x] Create the products table in the DB
 
 [x] Client page with client info (name, id, plastic_balance)
 
