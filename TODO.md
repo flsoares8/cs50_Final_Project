@@ -25,3 +25,6 @@
 # Register shopping list
 [ ] Page to register a shopping list
 [ ] Update customer plastic_balance after each shopping
+
+# Deploy
+[ ] Deploy DB in production environment
