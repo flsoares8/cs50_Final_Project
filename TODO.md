@@ -12,3 +12,7 @@
 [ ] Add Unique identifier number to the customer model
 
 [ ] Add search bar in the landing page
+
+[ ] Create a template for products list with a "Add new" button  
+
+[x] Load the DB from a csv file
