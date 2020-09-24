@@ -12,18 +12,19 @@
 [x] Add Unique identifier number to the customer model
 
 # Homepage
-[ ] Add search bar (per NIF or name) in the landing page
+[ ] Add search bar (per NIF or name) in the landing page and show the client info
 [ ] Complete the description in the landing page
-[ ] Button to page client_info.html
 
 # Product List/Register
 [x] Create a form to register products
 [x] Create the products table in the DB
-[ ] Create a template for products list with a "Add new" button  
+[x] Create a template for products list with a "Add new" button  
 [x] Load the DB from a csv file
+[ ] Solve the new product registration problem after loading a list of products
 
 # Register shopping list
-[ ] Page to register a shopping list
+[x] Page to register a shopping list
+[ ] Process payment of shopping list
 [ ] Update customer plastic_balance after each shopping
 
 # Deploy

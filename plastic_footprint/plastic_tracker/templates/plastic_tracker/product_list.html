@@ -1,0 +1,30 @@
+{% extends "plastic_tracker/base.html" %}
+
+
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Product Id</td>
+            <td>Name</td>
+            <td>Plastic Weight</td>
+            <td>
+                <a href="{% url 'product_registration' %}" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Add New
+                </a>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in product_list %}
+            <tr>
+                <td>{{product.product_id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.plastic_weight}}</td>
+                <td></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

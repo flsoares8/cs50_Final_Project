@@ -33,4 +33,24 @@ def product_registration(request):
         form = ProductForm(request.POST)
         if form.is_valid():
             form.save()
+        return redirect('/productlist')
+
+def product_list(request):
+    context = {'product_list': Product.objects.all()}
+    return render(request, "plastic_tracker/product_list.html", context)
+
+def shopping_list(request):
+    print(request)
+    if request.method == "GET":
+        form = ProductForm()
+        return render(request, "plastic_tracker/shopping_list.html", {'form': form})
+    elif 'register' in request.POST:
+        print("REGISTER")
+
+        return redirect('/shoppinglist')
+    elif 'payment' in request.POST:
+        print("PAYMENT")
         return redirect('/')
+
+def process_payment(request):
+    return redirect('/')
