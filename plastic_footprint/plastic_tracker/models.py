@@ -4,8 +4,9 @@ from django.db import models
 
 class Customer(models.Model):
     fullname = models.CharField(max_length=100)
-    monthly_balance = models.FloatField()
-
+    id_number = models.IntegerField(blank = True)
+    monthly_balance = models.FloatField(default = 2.0)
+    
 class Product(models.Model):
     product_id = models.IntegerField()
     name = models.CharField(max_length=100)

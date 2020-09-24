@@ -9,7 +9,7 @@
 [ ] Create a button in client_info.html to go back to the landing page
 
 # Client Register
-[ ] Add Unique identifier number to the customer model
+[x] Add Unique identifier number to the customer model
 
 # Homepage
 [ ] Add search bar (per NIF or name) in the landing page

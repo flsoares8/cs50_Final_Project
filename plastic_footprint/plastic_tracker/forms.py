@@ -6,8 +6,9 @@ class CustomerForm(forms.ModelForm):
 
     class Meta:
         model = Customer
-        fields = '__all__'
-
+        #fields = '__all__'
+        fields = ('fullname', 'id_number')
+        
     # def __init__(self, *args, **kwargs):
     #     super(EmployeeForm, self).__init__(*args, **kwargs)
     #     self.fields['position'].empty_label = "Select"
