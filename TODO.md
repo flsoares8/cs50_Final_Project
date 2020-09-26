@@ -21,6 +21,7 @@
 [x] Create a template for products list with a "Add new" button  
 [x] Load the DB from a csv file
 [ ] Solve the new product registration problem after loading a list of products
+[ ] Error message when trying to register a inexistant product
 
 # Register shopping list
 [x] Page to register a shopping list
