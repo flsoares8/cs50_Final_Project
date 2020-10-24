@@ -10,8 +10,8 @@
 # Client info page
 
 [x] Client page with client info (name, id, plastic_balance)
-[ ] Create a button in client_info.html to go back to the landing page
-[ ] Query client per id_number instead of genereated id
+[x] Create a button in client_info.html to go back to the landing page
+[x] Query client per id_number instead of genereated id
 [ ] Button to start shopping
 
 # Client Register
@@ -20,9 +20,8 @@
 
 # Homepage
 
-! [ ] Complete the description in the landing page
-[ ] (OPTIONAL) Add facts about plastic consumption
-! [ ] Add search bar (per NIF or name) in the landing page and show the client info
+[x] Complete the description in the landing page
+[x] Add search bar (per NIF or name) in the landing page and show the client info
 
 # Product List/Register
 

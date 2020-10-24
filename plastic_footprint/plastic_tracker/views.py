@@ -26,7 +26,7 @@ def customer_registration(request):
         return redirect('/')
 
 def customer_info(request, id):
-    context = {'customer_info': Customer.objects.get(pk=id)}
+    context = {'customer_info': Customer.objects.get(id_number=id)}
     return render(request, "plastic_tracker/customer_info.html", context)
 
 def product_registration(request):
