@@ -1,9 +1,9 @@
 {% extends "plastic_tracker/base.html" %} {% block content %}
 <h4>We help you keeping in mind your plastic footprint everytime you shop</h4>
-<p><i>Be COUNSCIOUS.</i></p>
+<p><i>Be CONSCIOUS.</i></p>
 
-<div class="row">
-  <div class="col s3 offset-s9">
+<div class="row valign-wrapper">
+  <div class="col s6">
     <a
       class="waves-effect waves-light btn"
       href="{% url 'customer_registration' %}"
@@ -12,9 +12,15 @@
       Register client
     </a>
   </div>
+  <div class="col s6 valign-wrapper">
+    <input placeholder="Enter your client id number here" />
+    <i class="material-icons teal-text text-darken-4">search</i>
+    <!-- <a href="{% url 'product_registration' %}">
+      </a> -->
+  </div>
 </div>
 <div class="row">
-  <div class="col s6 offset-s9">
+  <div class="col s6">
     <a
       class="waves-effect waves-light btn"
       href="{% url 'product_registration' %}"
@@ -24,5 +30,6 @@
     </a>
   </div>
 </div>
+<div class="row"></div>
 
 {% endblock content %}
