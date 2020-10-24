@@ -1,12 +1,22 @@
 from django.shortcuts import render, redirect
-from .forms import CustomerForm, ProductForm
+from .forms import CustomerForm, ProductForm, SearchForm
 from .models import Customer, Product
 
 # Create your views here.
 
 
-def landing_page(request):
-    return render(request, "plastic_tracker/landing_page.html")
+def landing_page(request, id=0):
+    if request.method == "GET":    
+        form = SearchForm()
+        return render(request, "plastic_tracker/landing_page.html", {'form': form})
+    else:
+        # employee = Employee.objects.get(pk=id)
+        # form = EmployeeForm(request.POST, instance = employee)
+        # if it is a POST, save the POST data
+        form = SearchForm(request.POST)
+        id = form.fields
+        print(id)
+        return redirect('/')
 
 
 def customer_registration(request):

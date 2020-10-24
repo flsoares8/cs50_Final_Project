@@ -1,4 +1,7 @@
-{% extends "plastic_tracker/base.html" %} {% block content %}
+{% extends "plastic_tracker/base.html" %} 
+{% load materializecss %}
+
+{% block content %}
 <h4>We help you keeping in mind your plastic footprint everytime you shop</h4>
 <p><i>Be CONSCIOUS.</i></p>
 
@@ -12,12 +15,15 @@
       Register client
     </a>
   </div>
-  <div class="col s6 valign-wrapper">
-    <input placeholder="Enter your client id number here" />
-    <i class="material-icons teal-text text-darken-4">search</i>
-    <!-- <a href="{% url 'product_registration' %}">
-      </a> -->
-  </div>
+  <form class="col s6 valign-wrapper" action="" method="POST" autocomplete="off">
+    {% csrf_token %}
+    <div class="input-field col s6">
+        {{form.id_number|materializecss}}
+    </div>
+    <button type='submit'>
+      <i class="material-icons teal-text text-darken-4">search</i>
+    </button>
+  </form>
 </div>
 <div class="row">
   <div class="col s6">
