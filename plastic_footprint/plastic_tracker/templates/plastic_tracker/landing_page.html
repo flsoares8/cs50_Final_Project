@@ -15,12 +15,17 @@
       Register client
     </a>
   </div>
-  <form class="col s6 valign-wrapper" action="" method="POST" autocomplete="off">
+  <form
+    class="col s6 valign-wrapper"
+    action=""
+    method="POST"
+    autocomplete="off"
+  >
     {% csrf_token %}
     <div class="input-field col s6">
-        {{form.id_number|materializecss}}
+      {{form.id_number|materializecss}}
     </div>
-    <button type='submit'>
+    <button type="submit">
       <i class="material-icons teal-text text-darken-4">search</i>
     </button>
   </form>
