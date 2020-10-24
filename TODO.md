@@ -21,6 +21,7 @@
 # Homepage
 
 ! [ ] Complete the description in the landing page
+[ ] (OPTIONAL) Add facts about plastic consumption
 ! [ ] Add search bar (per NIF or name) in the landing page and show the client info
 
 # Product List/Register
