@@ -14,10 +14,10 @@ def landing_page(request, id=0):
         return redirect('/client/' + id)
 
 
-def customer_registration(request):
+def client_registration(request):
     if request.method == "GET":
         form = CustomerForm()
-        return render(request, "plastic_tracker/customer_registration.html", {'form': form})
+        return render(request, "plastic_tracker/client_registration.html", {'form': form})
     else:
         # if it is a POST, save the POST data
         form = CustomerForm(request.POST)
@@ -25,9 +25,10 @@ def customer_registration(request):
             form.save()
         return redirect('/')
 
-def customer_info(request, id):
-    context = {'customer_info': Customer.objects.get(id_number=id)}
-    return render(request, "plastic_tracker/customer_info.html", context)
+def client_info(request, id):
+    context = {'client_info': Customer.objects.get(id_number=id)}
+    print(context)
+    return render(request, "plastic_tracker/client_info.html", context)
 
 def product_registration(request):
     if request.method == "GET":
