@@ -5,7 +5,7 @@ from .models import Customer, Product
 # Create your views here.
 
 
-def landing_page(request, id=0):
+def landing_page(request):
     if request.method == "GET":    
         form = CustomerForm()
         return render(request, "plastic_tracker/landing_page.html", {'form': form})
@@ -27,7 +27,6 @@ def client_registration(request):
 
 def client_info(request, id):
     context = {'client_info': Customer.objects.get(id_number=id)}
-    print(context)
     return render(request, "plastic_tracker/client_info.html", context)
 
 def product_registration(request):
@@ -45,11 +44,12 @@ def product_list(request):
     context = {'product_list': Product.objects.all()}
     return render(request, "plastic_tracker/product_list.html", context)
 
-def shopping_list(request):
-    print(request)
+def shopping_list(request, id=0):
+    data = {'client_info': Customer.objects.get(id_number=id)}
+    client = data['client_info']
     if request.method == "GET":
         form = ProductForm()
-        return render(request, "plastic_tracker/shopping_list.html", {'form': form})
+        return render(request, "plastic_tracker/shopping_list.html", {'form': form, 'client': client})
     elif 'register' in request.POST:
         print("REGISTER")
 
