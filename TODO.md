@@ -5,6 +5,7 @@
 # General
 
 [x] Substitute DB credentials by env variables
+DIOGO [ ] Write a script for the video
 [ ] Create video content pitching our project
 
 # Client info page
@@ -12,7 +13,8 @@
 [x] Client page with client info (name, id, plastic_balance)
 [x] Create a button in client_info.html to go back to the landing page
 [x] Query client per id_number instead of genereated id
-[ ] Button to start shopping
+[X] Button to start shopping
+(non-critical) [ ] Handle error when the cient does not exist
 
 # Client Register
 
@@ -29,15 +31,16 @@
 [x] Create the products table in the DB
 [x] Create a template for products list with a "Add new" button  
 [x] Load the DB from a csv file
-[ ] Solve the new product registration problem after loading a list of products
+DIOGO [ ] Solve the new product registration problem after loading a list of products
+(duplicate key value violates unique constraint "plastic_tracker_product_pkey")
 
 # Register shopping list
 
-(optional) [ ] Error message when trying to register a inexistant product
+(non-critical) [ ] Handle error when registering an inexistant product
 [x] Page to register a shopping list
-[ ] Field to introduce the User ID - receive in the render
-[ ] Process payment of shopping list
-[ ] Update customer plastic_balance after each shopping
+[x] Field to introduce the User ID - receive in the render
+FRANCISCO [ ] Update customer plastic_balance after each shopping
+FRANCISCO [ ] Process payment of shopping list
 
 # Deploy (OPTIONAL)
 
