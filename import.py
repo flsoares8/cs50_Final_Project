@@ -31,7 +31,7 @@ def main():
       reader = csv.reader(f)
       next(reader) # Skip the header row.
       for row in reader:
-        cur.execute("INSERT INTO plastic_tracker_product VALUES (%s, %s, %s, %s)",row)
+        cur.execute("INSERT INTO plastic_tracker_product VALUES (%s, %s, %s)",row)
     db.commit()
  
     exit(0)
