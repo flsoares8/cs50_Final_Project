@@ -8,6 +8,6 @@ class Customer(models.Model):
     monthly_balance = models.FloatField(default = 2.0)
     
 class Product(models.Model):
-    product_id = models.IntegerField()
+    product_id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=100)
     plastic_weight = models.FloatField()
