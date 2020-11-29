@@ -31,7 +31,7 @@ DIOGO [ ] Write a script for the video
 [x] Create the products table in the DB
 [x] Create a template for products list with a "Add new" button  
 [x] Load the DB from a csv file
-DIOGO [ ] Solve the new product registration problem after loading a list of products
+[x] Solve the new product registration problem after loading a list of products
 (duplicate key value violates unique constraint "plastic_tracker_product_pkey")
 
 # Register shopping list
