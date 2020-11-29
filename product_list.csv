@@ -1,11 +1,11 @@
 product_id,product_name,weight
-2351,Butter,0.1
-1276,Milk(1L),0.2
-1988,Soup,0.2
-7521,Mushrooms,0.23
-5342,Vegetable oil,0.4
-1899,Spaguetti,0.08
-9884,Tofu,0.12
-3592,Dish soap,0.3
-2314,Iogurt,0.21
-2222,Pizza,0.15
+2000,Butter,0.100
+2001,Pack of Milk,0.200
+2002,Soup,0.150
+2003,Mushrooms,0.120
+2004,Sunflower Oil,0.020
+2005,Spaguetti,0.080
+2006,Tofu,0.012
+3000,Dish soap,0.030
+3001,Iogurt,0.021
+3002,Pizza,0.150

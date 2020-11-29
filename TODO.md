@@ -14,6 +14,7 @@ DIOGO [ ] Write a script for the video
 [x] Create a button in client_info.html to go back to the landing page
 [x] Query client per id_number instead of genereated id
 [X] Button to start shopping
+[ ] Add a header title to the page
 (non-critical) [ ] Handle error when the cient does not exist
 
 # Client Register
@@ -24,6 +25,7 @@ DIOGO [ ] Write a script for the video
 
 [x] Complete the description in the landing page
 [x] Add search bar (per NIF or name) in the landing page and show the client info
+[ ] Add label "User Info Page" to the search bar
 
 # Product List/Register
 
@@ -32,7 +34,8 @@ DIOGO [ ] Write a script for the video
 [x] Create a template for products list with a "Add new" button  
 [x] Load the DB from a csv file
 [x] Solve the new product registration problem after loading a list of products
-(duplicate key value violates unique constraint "plastic_tracker_product_pkey")
+[ ] Add a button to see the full shopping list "See product list"
+[ ] Change the submit button style
 
 # Register shopping list
 
