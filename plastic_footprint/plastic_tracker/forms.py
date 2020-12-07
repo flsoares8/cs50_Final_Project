@@ -17,4 +17,4 @@ class ProductForm(forms.ModelForm):
 class SearchForm(forms.ModelForm):
     class Meta:
         model = Customer
-        fields = ('id_number',)
+        fields = ('id_number',)    
