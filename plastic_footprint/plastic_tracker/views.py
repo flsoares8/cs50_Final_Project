@@ -38,7 +38,7 @@ def product_registration(request):
         form = ProductForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect('/productlist')
+        return redirect('/registerproduct')
 
 def product_list(request):
     context = {'product_list': Product.objects.all()}

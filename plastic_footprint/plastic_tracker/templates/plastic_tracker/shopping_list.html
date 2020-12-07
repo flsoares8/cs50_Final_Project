@@ -2,7 +2,7 @@
 {% load materializecss %}
 
 {% block content %}
-<h4 class="blue-text blue-lighten-2">Shopping List - {{client.fullname}}'s current plastic balance: {{client.monthly_balance}}</h4>
+<h4>Shopping List - {{client.fullname}}'s current plastic balance: {{client.monthly_balance}}</h4>
 <div class="row">
   <form class="col s12" action="" method="POST" autocomplete="off">
     {% csrf_token %}
