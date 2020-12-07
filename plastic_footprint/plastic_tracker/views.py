@@ -51,12 +51,19 @@ def shopping_list(request, id=0):
         form = ProductForm()
         return render(request, "plastic_tracker/shopping_list.html", {'form': form, 'client': client})
     elif 'register' in request.POST:
-        print("REGISTER")
-
-        return redirect('/shoppinglist')
+        product_id = request.POST['product_id']
+        the_shopping_list.append(product_id)
+        return redirect('/shoppinglist/'+str(client.id_number))
     elif 'payment' in request.POST:
-        print("PAYMENT")
-        return redirect('/')
+        process_payment(the_shopping_list, client.id_number)
+        the_shopping_list.clear()
+        return redirect('../client/' + id)
 
-def process_payment(request):
-    return redirect('/')
+def process_payment(a_shopping_list, client_id):
+    client = Customer.objects.get(id_number=client_id)
+    for id in a_shopping_list:
+        product = Product.objects.get(product_id=id)
+        client.monthly_balance -= product.plastic_weight
+    client.save()
+
+the_shopping_list = []
