@@ -35,7 +35,7 @@ DIOGO [ ] Write a script for the video
 [x] Load the DB from a csv file
 [x] Solve the new product registration problem after loading a list of products
 [ ] Add a button to see the full shopping list "See product list"
-[ ] Change the submit button style
+[x] Change the submit button style
 
 # Register shopping list
 
