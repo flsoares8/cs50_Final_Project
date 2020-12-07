@@ -21,14 +21,13 @@
 - Hummus
 - 0.050
 
-8. (Click a button? to )Import the list of products from the .csv
-9. Check the list again
-10. Register a new product from the application
-11. Go Home
+8. Check the list again
+9. Register a new product from the application
+10. Go Home
 
 # Start Shopping
 
-12. Enter user ID
-13. Start shopping
-14. Shop 3 products
-15. Payment
+11. Enter user ID
+12. Start shopping
+13. Shop 3 products
+14. Payment
