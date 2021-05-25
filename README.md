@@ -8,7 +8,7 @@ The project's goal is to introduce a way to control your plastic footprint every
 
 ### WHY
 
-Striving for a more concious World, awareness of our footprint is essential. Getting past last century materials is walking in that direction.
+Striving for a more conscious World, awareness of our footprint is essential. Getting past last century materials is walking in that direction.
 
 ### _WHAT_
 
@@ -20,6 +20,25 @@ For this process to be accurate, every selling item shall be registered in a kno
 
 We've decided to create a Web App using Django and a PostGres database.
 The idea is the user to interact with a GUI fetching its data or executing some operations that will represent CRUD operations in the DB.
+
+---
+
+## **How to run** 🐍
+
+Running the project from the beggining
+
+1. Create a user postgres if it does not exist
+   `createuser -s postgres`
+
+2. Create a DB named plastic_tracker
+   `createdb plastic_tracker`
+
+3. Apply the migrations to your DB  
+   `python manage.py migrate`  
+   You will need to have installed python libraries **django**, **python-dotenv**, **django-materializecss-form** and **psycopg2**
+
+4. Run the webserver  
+   `python manage.py runserver`
 
 ---
 
